@@ -53,6 +53,7 @@ h1 { max-width: 950px; margin-bottom: 44px; font-size: clamp(3.4rem, 8.5vw, 7.8r
 
   width: 100vw;
   height: 1.5cm;
+  margin-top: 2cm;
   margin-left: calc(50% - 50vw);
   padding: 0 max(20px, calc((100vw - 1240px) / 2));
 
