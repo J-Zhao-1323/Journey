@@ -143,3 +143,21 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Hero section background image */
+.hero {
+  background-color: #F7F4EF;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(247, 244, 239, 0.72) 0%,
+      rgba(247, 244, 239, 0.42) 45%,
+      rgba(247, 244, 239, 0.08) 100%
+    ),
+    url("assets/IMG_0328.jpg");
+
+  background-size: cover;
+  background-position: 75% center;
+  background-repeat: no-repeat;
+}
