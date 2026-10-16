@@ -144,10 +144,35 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
 
-/* Hero section background image */
  
+/* Hero section background image */
 .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  width: 100%;
+  margin-inline: 0;
+  padding-inline: max(20px, calc((100% - 1240px) / 2));
+
   background-color: #F7F4EF;
+  background-image: none;
+}
+
+/* Background layer: extend down, then crop */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -0.5cm;
+  left: 0;
+  z-index: -1;
+
   background-image: url("assets/IMG_0328.jpg");
-  background-position: 86%;
+  background-size: cover;
+  background-position: 86% 60%;
+  background-repeat: no-repeat;
+}
+
 }
