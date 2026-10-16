@@ -145,13 +145,12 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
 }
 
 /* Hero section background image */
+ 
 .hero {
   background-color: #F7F4EF;
-
   background-image: url("assets/IMG_0328.jpeg");
-  
-
   background-size: cover;
-  background-position: 85% 60% center;
+  background-position: 75% 60%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
