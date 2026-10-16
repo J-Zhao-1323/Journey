@@ -44,7 +44,26 @@ h1 { max-width: 950px; margin-bottom: 44px; font-size: clamp(3.4rem, 8.5vw, 7.8r
 .hero-intro strong { color: var(--ink); font-weight: 600; }
 .text-link { display: inline-flex; align-items: center; gap: 22px; padding-bottom: 7px; border-bottom: 1px solid var(--ink); font-size: .9rem; white-space: nowrap; }
 .text-link span { color: var(--accent); font-size: 1.1rem; }
-.hero-rule { display: flex; justify-content: space-between; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font: .64rem var(--font-mono); letter-spacing: .06em; }
+
+/* Full-width green information bar */
+.hero-rule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100vw;
+  height: 1.5cm;
+  margin-left: calc(50% - 50vw);
+  padding: 0 max(20px, calc((100vw - 1240px) / 2));
+
+  background-color: #336584;
+  border-top: none;
+  color: #FFFFFF;
+
+  font: 500 .68rem/1.2 var(--font-mono);
+  letter-spacing: .06em;
+}
+
 
 .work-section { padding-top: 105px; padding-bottom: 120px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 42px; }
