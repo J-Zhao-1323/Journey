@@ -37,9 +37,9 @@ button { font: inherit; }
 .eyebrow { margin: 0 0 24px; color: var(--muted); font: 500 .68rem/1.5 var(--font-mono); letter-spacing: .075em; }
 .status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--accent); vertical-align: 1px; }
 h1, h2, h3, p { margin-top: 0; }
-h1 { max-width: 950px; margin-bottom: 44px; font-size: clamp(3.4rem, 8.5vw, 7.8rem); font-weight: 500; line-height: .99; letter-spacing: -.085em; }
-.serif-accent { color: var(--accent); font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-style: italic; letter-spacing: -.07em; }
-.hero-bottom { display: flex; justify-content: space-between; align-items: end; gap: 36px; padding-bottom: 72px; }
+h1 { max-width: 950px; margin-bottom: 44px; font-size: 60px; font-weight: 500; line-height: .99; letter-spacing: -.085em; }
+.serif-accent { color: #FFFFFF; font-family: var(--font-body); font-weight: 500; font-style: normal; letter-spacing: inherit; }
+.hero-bottom { display: flex; justify-content: space-between; align-items: end; gap: 36px; padding-bottom: 148px; }
 .hero-intro { max-width: 550px; margin: 0; color: #4c5a53; font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.7; }
 .hero-intro strong { color: var(--ink); font-weight: 600; }
 .text-link { display: inline-flex; align-items: center; gap: 22px; padding-bottom: 7px; border-bottom: 1px solid var(--ink); font-size: .9rem; white-space: nowrap; }
@@ -53,7 +53,6 @@ h1 { max-width: 950px; margin-bottom: 44px; font-size: clamp(3.4rem, 8.5vw, 7.8r
 
   width: 100vw;
   height: 1.5cm;
-  margin-top: 2cm;
   margin-left: calc(50% - 50vw);
   padding: 0 max(20px, calc((100vw - 1240px) / 2));
 
@@ -136,7 +135,7 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
   .primary-nav.is-open { display: flex; }
   .primary-nav .nav-resume { padding: 7px 12px; }
   .hero { padding-top: 76px; }
-  h1 { font-size: clamp(3.2rem, 15vw, 5.7rem); margin-bottom: 32px; }
+  h1 { font-size: 60px; margin-bottom: 32px; }
   .hero-bottom, .section-heading, .contact-bottom { align-items: flex-start; flex-direction: column; }
   .hero-bottom { padding-bottom: 48px; gap: 25px; }
   .work-section { padding-block: 76px 84px; }
