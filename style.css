@@ -24,12 +24,12 @@ button { font: inherit; }
 .skip-link { position: absolute; z-index: 100; top: -60px; left: 16px; background: var(--ink); color: white; padding: 10px 14px; }
 .skip-link:focus { top: 12px; }
 
-.site-header { height: 82px; width: min(var(--page-width), calc(100% - 64px)); margin: auto; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.site-header { height: 82px; width: min(826.67px, calc(66.6667% - 42.67px)); margin: auto; display: flex; align-items: center; justify-content: space-between; background-color: #336584; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,.25); }
 .wordmark { font-size: 1.4rem; font-weight: 700; letter-spacing: -.08em; }
-.wordmark span { color: var(--accent); }
+.wordmark span { color: #cf9959; }
 .primary-nav { display: flex; align-items: center; gap: 32px; font-size: .86rem; }
 .primary-nav a { transition: color .2s ease; }
-.primary-nav a:hover, .primary-nav a:focus-visible { color: var(--accent); }
+.primary-nav a:hover, .primary-nav a:focus-visible { color: #FFFFFF; }
 .primary-nav .nav-resume { border: 1px solid var(--ink); padding: 9px 14px; border-radius: 100px; }
 .nav-toggle { display: none; }
 
@@ -100,9 +100,9 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
 .contact-links a { border-bottom: 1px solid var(--line); padding-bottom: 5px; }
 .contact-links a span { color: var(--accent); }
 .contact-email { font-size: 1.1rem; }
-.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 90px; border-top: 1px solid var(--line); color: var(--muted); font-size: .72rem; }
+.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 90px; width: min(826.67px, calc(66.6667% - 42.67px)); margin-inline: auto; background-color: #336584; border-top: 1px solid rgba(255,255,255,.25); color: #FFFFFF; font-size: .72rem; }
 .site-footer p { margin: 0; }
-.site-footer .wordmark { color: var(--ink); }
+.site-footer .wordmark { color: #FFFFFF; }
 
 /* Case-study pages */
 .case-hero { padding-top: 90px; padding-bottom: 60px; }
@@ -126,12 +126,12 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
 
 @media (max-width: 720px) {
   .section-shell, .site-header { width: min(100% - 40px, var(--page-width)); }
-  .site-header { height: 70px; }
+  .site-header { height: 70px; width: min(826.67px, calc(66.6667% - 26.67px)); }
   .nav-toggle { display: block; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; background: transparent; cursor: pointer; }
   .nav-toggle-lines, .nav-toggle-lines::before, .nav-toggle-lines::after { display: block; position: relative; width: 16px; height: 1px; margin: auto; background: var(--ink); content: ''; }
   .nav-toggle-lines::before { position: absolute; top: -5px; }
   .nav-toggle-lines::after { position: absolute; top: 5px; }
-  .primary-nav { display: none; position: absolute; z-index: 10; top: 70px; left: 0; right: 0; padding: 22px 20px 26px; flex-direction: column; align-items: flex-start; gap: 20px; background: var(--paper); border-bottom: 1px solid var(--line); }
+  .primary-nav { display: none; position: absolute; z-index: 10; top: 70px; left: 0; right: 0; padding: 22px 20px 26px; flex-direction: column; align-items: flex-start; gap: 20px; background: #336584; border-bottom: 1px solid var(--line); }
   .primary-nav.is-open { display: flex; }
   .primary-nav .nav-resume { padding: 7px 12px; }
   .hero { padding-top: 76px; }
@@ -149,7 +149,7 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
   .contact-section { padding-block: 80px; }
   .contact-bottom { gap: 24px; margin-top: 34px; }
   .contact-links { min-width: 0; }
-  .site-footer { flex-wrap: wrap; padding-block: 22px; }
+  .site-footer { flex-wrap: wrap; padding-block: 22px; width: min(826.67px, calc(66.6667% - 26.67px)); }
   .site-footer p { order: 3; width: 100%; }
   .case-hero { padding-top: 64px; }
   .back-link { margin-bottom: 34px; }
