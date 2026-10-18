@@ -119,11 +119,14 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
   box-sizing: border-box;
   background: #336584;
   border-top: none;
-  color: var(--muted);
+  color:  #FFFFFF;
   font-size: .72rem;
 }
 .site-footer p { margin: 0; }
-.site-footer .wordmark { color: var(--ink); }
+.site-footer .wordmark { color: #FFFFFF; }
+.site-footer a {
+  color: #FFFFFF;
+}
 
 /* Case-study pages */
 .case-hero { padding-top: 90px; padding-bottom: 60px; }
