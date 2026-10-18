@@ -24,7 +24,14 @@ button { font: inherit; }
 .skip-link { position: absolute; z-index: 100; top: -60px; left: 16px; background: var(--ink); color: white; padding: 10px 14px; }
 .skip-link:focus { top: 12px; }
 
-.site-header { height: 82px; width: 100%; margin: 0; padding-inline: max(32px, calc((100vw - 1240px) / 2)); box-sizing: border-box;display: flex; align-items: center;justify-content: space-between; background: #336584;border-bottom: none;}
+.site-header { height: 82px; width: 100%; margin: 0; padding-inline: max(32px, calc((100vw - 1240px) / 2)); box-sizing: border-box;display: flex; align-items: center;justify-content: space-between; background: #336584;border-bottom: none;color: #FFFFFF;}.site-header .wordmark,
+.site-header .primary-nav a {
+  color: #FFFFFF;
+}
+
+.site-header .wordmark span {
+  color: #cf9959;
+}
 .wordmark { font-size: 1.4rem; font-weight: 700; letter-spacing: -.08em; }
 .wordmark span { color: #cf9959; }
 .primary-nav { display: flex; align-items: center; gap: 32px; font-size: .86rem; }
@@ -100,9 +107,23 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
 .contact-links a { border-bottom: 1px solid var(--line); padding-bottom: 5px; }
 .contact-links a span { color: var(--accent); }
 .contact-email { font-size: 1.1rem; }
-.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 90px; width: 100%; margin-inline: 0; background-color: #336584; border-top: 1px solid rgba(255,255,255,.25); color: #FFFFFF; font-size: .72rem; }
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 90px;
+  width: 100%;
+  margin-inline: 0;
+  padding-inline: max(32px, calc((100vw - 1240px) / 2));
+  box-sizing: border-box;
+  background: #336584;
+  border-top: none;
+  color: var(--muted);
+  font-size: .72rem;
+}
 .site-footer p { margin: 0; }
-.site-footer .wordmark { color: #FFFFFF; }
+.site-footer .wordmark { color: var(--ink); }
 
 /* Case-study pages */
 .case-hero { padding-top: 90px; padding-bottom: 60px; }
