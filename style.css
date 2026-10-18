@@ -42,10 +42,13 @@ button { font: inherit; }
 
 .hero { padding-top: clamp(76px, 11vw, 150px); padding-bottom: 0; }
 .eyebrow { margin: 0 0 24px; color: var(--muted); font: 500 .68rem/1.5 var(--font-mono); letter-spacing: .075em; }
-.status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--accent); vertical-align: 1px; }
+.status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: #cf9959; vertical-align: 1px; }
 h1, h2, h3, p { margin-top: 0; }
 h1 { max-width: 950px; margin-bottom: 44px; font-size: 60px; font-weight: 500; line-height: .99; letter-spacing: -.085em; }
 .serif-accent { color: #FFFFFF; font-family: var(--font-body); font-weight: 500; font-style: normal; letter-spacing: inherit; }
+.about-section h2 .serif-accent {
+  color: var(--ink);
+}
 .hero-bottom { display: flex; justify-content: space-between; align-items: end; gap: 36px; padding-bottom: 144px; }
 .hero-intro { max-width: 550px; margin: 0; color: #4c5a53; font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.7; }
 .hero-intro strong { color: var(--ink); font-weight: 600; }
@@ -111,7 +114,7 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 4.5vw, 4.2rem); line-height: 1.04;
 .arrow-link { display: inline-flex; gap: 16px; align-items: center; font-size: .85rem; border-bottom: 1px solid var(--line); padding-bottom: 5px; }
 .arrow-link span { color: var(--accent); }
 
-.about-section { padding-block: 100px 105px; background: var(--green); }
+.about-section { padding-block: 100px 105px; background: var(--paper); }
 .about-layout { display: grid; grid-template-columns: 1.05fr .95fr; gap: 8vw; }
 .about-layout h2 { font-size: clamp(2.2rem, 4.3vw, 4.1rem); }
 .about-copy { padding-top: 40px; }
